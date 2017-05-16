@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Chartres Tourisme</string>
+    <string name="category_restaurants">Restaurants</string>
+    <string name="category_museums">Museums</string>
+    <string name="category_parks">Parks</string>
+    <string name="category_historical_sites">Historical Sites</string>
+</resources>
