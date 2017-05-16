@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -22,9 +21,9 @@ public class RestaurantsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Location> locations = new ArrayList<>();
-        locations.add(new Location("Passacaille", "lutti", "description"));
-        locations.add(new Location("Chinois", "otiiko", "description"));
-        locations.add(new Location("McDo", "ololo", "description"));
+        locations.add(new Location("Passacaille", "30 rue St Même", "Bonne pizzeria"));
+        locations.add(new Location("Nouvel Orient", "26 Rue du Grand Faubourg", "Bon chinois"));
+        locations.add(new Location("McDo", "Place des Epars", "le McDo central"));
 
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);

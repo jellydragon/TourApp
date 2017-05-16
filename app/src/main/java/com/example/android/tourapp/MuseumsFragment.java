@@ -9,9 +9,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by maria on 04/05/2017.
- */
 
 public class MuseumsFragment extends Fragment {
 
@@ -28,8 +25,6 @@ public class MuseumsFragment extends Fragment {
         locations.add(new Location("Musée des Beaux-Arts", "29 cloître Notre-Dame", "description"));
         locations.add(new Location("Centre International du Vitrail", "5 Rue du Cardinal Pie", "description"));
         locations.add(new Location("Musée de l'école de Chartres et d'Eure-et-Loir", "12 Place Drouaise", "description"));
-
-
 
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
