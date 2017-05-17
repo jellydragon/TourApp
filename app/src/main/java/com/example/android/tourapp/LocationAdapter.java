@@ -22,7 +22,7 @@ public class LocationAdapter extends ArrayAdapter<Location> {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
@@ -42,14 +42,12 @@ public class LocationAdapter extends ArrayAdapter<Location> {
 
         if (currentLocation.hasImage()) {
             iconView.setImageResource(currentLocation.getImageResourceId());
-        }
-        else {
+        } else {
             iconView.setVisibility(View.GONE);
         }
 
         return listItemView;
     }
-
 
 
 }

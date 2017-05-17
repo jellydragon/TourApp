@@ -23,14 +23,25 @@ public class MuseumsFragment extends Fragment {
 
         final ArrayList<Location> locations = new ArrayList<>();
 
-        locations.add(new Location("Théâtre de Chartres", "Place de Ravenne", "Lieu incontournable pour des spectacles de qualité", R.drawable.theatre));
-        locations.add(new Location("Centre International du Vitrail", "5 Rue du Cardinal Pie", "Le monde merveilleux du vitrail et du verre", R.drawable.vitrail));
-        locations.add(new Location("Musée de l'Ecole de Chartres et d'Eure-et-Loir", "12 Place Drouaise", "L'école il y a cent ans", R.drawable.musee_ecole));
+        locations.add(new Location(getString(R.string.theatre),
+                getString(R.string.address_theatre),
+                getString(R.string.description_theatre),
+                R.drawable.theatre));
 
+        locations.add(new Location(getString(R.string.centre_vitrail),
+                getString(R.string.address_centre_vitrail),
+                getString(R.string.description_centre_vitrail),
+                R.drawable.vitrail));
+
+        locations.add(new Location(getString(R.string.musee_ecole),
+                getString(R.string.address_musee_ecole),
+                getString(R.string.description_musee_ecole),
+                R.drawable.musee_ecole));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
+
         return rootView;
     }
 
