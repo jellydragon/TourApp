@@ -9,10 +9,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by maria on 04/05/2017.
- */
-
 public class MuseumsFragment extends Fragment {
 
     public MuseumsFragment() {
@@ -22,20 +18,28 @@ public class MuseumsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Location> locations = new ArrayList<>();
-        locations.add(new Location("Musée des Beaux-Arts", "29 cloître Notre-Dame", "description"));
-        locations.add(new Location("Centre International du Vitrail", "5 Rue du Cardinal Pie", "description"));
-        locations.add(new Location("Musée de l'école de Chartres et d'Eure-et-Loir", "12 Place Drouaise", "description"));
 
+        locations.add(new Location(getString(R.string.theatre),
+                getString(R.string.address_theatre),
+                getString(R.string.description_theatre),
+                R.drawable.theatre));
 
+        locations.add(new Location(getString(R.string.centre_vitrail),
+                getString(R.string.address_centre_vitrail),
+                getString(R.string.description_centre_vitrail),
+                R.drawable.vitrail));
 
+        locations.add(new Location(getString(R.string.musee_ecole),
+                getString(R.string.address_musee_ecole),
+                getString(R.string.description_musee_ecole),
+                R.drawable.musee_ecole));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
-
         ListView listView = (ListView) rootView.findViewById(R.id.list);
-
         listView.setAdapter(adapter);
 
         return rootView;

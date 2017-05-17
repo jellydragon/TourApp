@@ -9,13 +9,11 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by maria on 04/05/2017.
- */
 
 public class HistoricalSitesFragment extends Fragment {
 
     public HistoricalSitesFragment() {
+        // Required empty public constructor
     }
 
     @Override
@@ -24,13 +22,19 @@ public class HistoricalSitesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Location> locations = new ArrayList<>();
-        locations.add(new Location("Cathédrale de Chartres", "centre", "description", R.drawable.cathedrale));
-        locations.add(new Location("Maison Picassiette", "loin", "description", R.drawable.picassiette));
+
+        locations.add(new Location(getString(R.string.cathedrale),
+                getString(R.string.address_cathedrale),
+                getString(R.string.description_cathedrale),
+                R.drawable.cathedrale));
+
+        locations.add(new Location(getString(R.string.maison_picassiette),
+                getString(R.string.address_maison_picassiette),
+                getString(R.string.description_maison_picassiette),
+                R.drawable.picassiette));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
-
         ListView listView = (ListView) rootView.findViewById(R.id.list);
-
         listView.setAdapter(adapter);
 
         return rootView;
