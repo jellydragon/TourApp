@@ -1,7 +1,6 @@
 package com.example.android.tourapp;
 
 import android.app.Activity;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,7 +26,7 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         View listItemView = convertView;
         if(listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent, false);
+                    R.layout.list_item_vertical, parent, false);
         }
 
         Location currentLocation = getItem(position);

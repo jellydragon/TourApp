@@ -21,15 +21,15 @@ public class RestaurantsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Location> locations = new ArrayList<>();
-        locations.add(new Location("Passacaille", "30 rue St Même", "Bonne pizzeria"));
-        locations.add(new Location("Nouvel Orient", "26 Rue du Grand Faubourg", "Bon chinois pas cher"));
-        locations.add(new Location("McDo", "Place des Epars", "le McDo central"));
+        locations.add(new Location("Passacaille", "30 rue St Même", "Une des meilleures pizzerias de Chartres", R.drawable.passacaille));
+        locations.add(new Location("Académie de la Bière", "8 Rue du Cheval Blanc",
+                "Un large choix de très bonnes bières de 26 pays différents", R.drawable.acad));
 
+        //locations.add(new Location("McDo", "Place des Epars", "le McDo central"));
+        //locations.add(new Location("Nouvel Orient", "26 Rue du Grand Faubourg", "Bon chinois pas cher"));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
-
         ListView listView = (ListView) rootView.findViewById(R.id.list);
-
         listView.setAdapter(adapter);
 
 

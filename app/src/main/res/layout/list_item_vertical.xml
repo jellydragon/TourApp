@@ -3,25 +3,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/list_item_height"
+    android:layout_height="wrap_content"
     android:minHeight="@dimen/list_item_height"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="@dimen/list_item_height"
-        android:layout_height="@dimen/list_item_height"
-        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cathedrale"
         />
 
-    <LinearLayout
-        android:id="@+id/text_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <TextView
+    <TextView
             android:id="@+id/name_text_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -32,7 +28,7 @@
             android:textStyle="bold"
             tools:text="Resto chinois" />
 
-        <TextView
+    <TextView
             android:id="@+id/address_text_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -42,17 +38,15 @@
             android:textColor="@android:color/black"
             tools:text="Rue du Grand Faubourg" />
 
-        <TextView
+    <TextView
             android:id="@+id/description_text_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
+        android:text="C'est mon resto préféré"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/darker_gray"
-            android:text="C'est mon resto préféré" />
-
-    </LinearLayout>
+        android:textColor="@android:color/darker_gray" />
 
 
 </LinearLayout>
