@@ -2,16 +2,12 @@ package com.example.android.tourapp;
 
 public class Location {
 
+    private static final int NO_IMAGE_PROVIDED = -1;
     private String mAddress;
     private String mName;
     private String mDescription;
-
-    private static final int NO_IMAGE_PROVIDED = -1;
-
     // Drawable resource ID
-
     private int mImageResourceId = NO_IMAGE_PROVIDED;
-    //private int mImageResourceId = R.drawable.ic_parks;
 
     // constructor without image
     public Location(String name, String address, String description) {
@@ -27,7 +23,6 @@ public class Location {
         mDescription = description;
         mImageResourceId = imageResourceId;
     }
-
 
     @Override
     public String toString() {
