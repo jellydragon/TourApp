@@ -9,9 +9,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by maria on 04/05/2017.
- */
 
 public class HistoricalSitesFragment extends Fragment {
 
@@ -24,8 +21,8 @@ public class HistoricalSitesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Location> locations = new ArrayList<>();
-        locations.add(new Location("Cathédrale de Chartres", "centre", "description", R.drawable.cathedrale));
-        locations.add(new Location("Maison Picassiette", "loin", "description", R.drawable.picassiette));
+        locations.add(new Location("Cathédrale de Chartres", "16 Cloître Notre Dame", "Une des plus belles cathédrales de France", R.drawable.cathedrale));
+        locations.add(new Location("Maison Picassiette", "20 rue du Repos", "Maison magnifique en assiettes brisées", R.drawable.picassiette));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 

@@ -22,7 +22,7 @@ public class RestaurantsFragment extends Fragment {
 
         final ArrayList<Location> locations = new ArrayList<>();
         locations.add(new Location("Passacaille", "30 rue St Même", "Bonne pizzeria"));
-        locations.add(new Location("Nouvel Orient", "26 Rue du Grand Faubourg", "Bon chinois"));
+        locations.add(new Location("Nouvel Orient", "26 Rue du Grand Faubourg", "Bon chinois pas cher"));
         locations.add(new Location("McDo", "Place des Epars", "le McDo central"));
 
 
