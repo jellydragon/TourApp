@@ -1,22 +1,14 @@
 package com.example.android.tourapp;
 
-public class Location {
+class Location {
 
     private static final int NO_IMAGE_PROVIDED = -1;
-    private String mAddress;
-    private String mName;
-    private String mDescription;
+    private final String mAddress;
+    private final String mName;
+    private final String mDescription;
     // Drawable resource ID
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
-    // constructor without image
-    public Location(String name, String address, String description) {
-        mName = name;
-        mAddress = address;
-        mDescription = description;
-    }
-
-    // constructor with image
     public Location(String name, String address, String description, int imageResourceId) {
         mName = name;
         mAddress = address;

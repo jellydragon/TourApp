@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
-public class LocationAdapter extends ArrayAdapter<Location> {
+class LocationAdapter extends ArrayAdapter<Location> {
 
 
     public LocationAdapter(Activity context, ArrayList<Location> words) {

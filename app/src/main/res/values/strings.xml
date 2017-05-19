@@ -1,9 +1,5 @@
 <resources>
     <string name="app_name">Chartres Tourisme</string>
-    <string name="category_restaurants">Restaurants</string>
-    <string name="category_museums">Museums</string>
-    <string name="category_parks">Parks</string>
-    <string name="category_historical_sites">Historical Sites</string>
     <string name="passacaille">Passacaille</string>
     <string name="address_passacaille">30 rue St Même</string>
     <string name="description_passacaille">Une des meilleures pizzerias de Chartres</string>

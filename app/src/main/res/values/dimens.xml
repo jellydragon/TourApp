@@ -2,4 +2,7 @@
 <resources>
     <dimen name="list_item_height">260dp</dimen>
     <dimen name="image_height">160dp</dimen>
+    <dimen name="li_padding">16dp</dimen>
+    <dimen name="img_marginB">16dp</dimen>
+    <dimen name="txt_height">0dp</dimen>
 </resources>
