@@ -44,6 +44,4 @@ public class MuseumsFragment extends Fragment {
 
         return rootView;
     }
-
-
 }

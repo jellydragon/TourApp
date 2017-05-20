@@ -43,6 +43,4 @@ public class ParksFragment extends Fragment {
         listView.setAdapter(adapter);
         return rootView;
     }
-
-
 }

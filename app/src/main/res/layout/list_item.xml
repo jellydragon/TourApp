@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Layout for a single list item -->
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="@dimen/list_item_height"
@@ -13,35 +13,37 @@
         android:layout_height="@dimen/image_height"
         android:layout_marginBottom="@dimen/img_marginB"
         android:scaleType="centerCrop"
-        />
+        tools:src="@drawable/cathedrale" />
 
     <TextView
-            android:id="@+id/name_text_view"
-            android:layout_width="match_parent"
+        android:id="@+id/name_text_view"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/txt_height"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/black"
-        android:textStyle="bold" />
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        tools:text="@string/cathedrale" />
 
     <TextView
-            android:id="@+id/address_text_view"
-            android:layout_width="match_parent"
+        android:id="@+id/address_text_view"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/txt_height"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:textAppearance="?android:textAppearanceMedium"
-        android:textColor="@android:color/black" />
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black"
+        tools:text="@string/address_cathedrale" />
 
     <TextView
-            android:id="@+id/description_text_view"
-            android:layout_width="match_parent"
+        android:id="@+id/description_text_view"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/txt_height"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:textAppearance="?android:textAppearanceMedium"
-        android:textColor="@android:color/darker_gray" />
-
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/darker_gray"
+        tools:text="@string/description_cathedrale" />
 
 </LinearLayout>

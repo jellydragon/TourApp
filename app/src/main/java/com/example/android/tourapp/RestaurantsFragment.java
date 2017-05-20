@@ -40,5 +40,4 @@ public class RestaurantsFragment extends Fragment {
 
         return rootView;
     }
-
 }
