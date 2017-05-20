@@ -20,17 +20,20 @@ class LocationAdapter extends ArrayAdapter<Location> {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View listItemView = convertView;
+        ViewHolder holder;
+
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
+            holder = new ViewHolder();
+            holder.picture = (ImageView) listItemView.findViewById(R.id.image);
+            holder.name = (TextView) listItemView.findViewById(R.id.name_text_view);
+            holder.address = (TextView) listItemView.findViewById(R.id.address_text_view);
+            holder.description = (TextView) listItemView.findViewById(R.id.description_text_view);
+            listItemView.setTag(holder);
+        } else {
+            holder = (ViewHolder) listItemView.getTag();
         }
-
-        ViewHolder holder = new ViewHolder();
-        holder.picture = (ImageView) listItemView.findViewById(R.id.image);
-        holder.name = (TextView) listItemView.findViewById(R.id.name_text_view);
-        holder.address = (TextView) listItemView.findViewById(R.id.address_text_view);
-        holder.description = (TextView) listItemView.findViewById(R.id.description_text_view);
-        listItemView.setTag(holder);
 
         Location currentLocation = getItem(position);
 
